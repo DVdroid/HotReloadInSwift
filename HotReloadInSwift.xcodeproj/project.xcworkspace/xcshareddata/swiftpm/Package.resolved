@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "inject",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/krzysztofzablocki/Inject.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "b21e462d6e1d12fad8a189794bf9fd874eef2cb0"
+      }
+    }
+  ],
+  "version" : 2
+}

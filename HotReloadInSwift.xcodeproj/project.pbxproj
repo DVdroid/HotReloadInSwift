@@ -10,9 +10,10 @@
 		1552176D2801684A00A8EC97 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1552176C2801684A00A8EC97 /* AppDelegate.swift */; };
 		1552176F2801684A00A8EC97 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1552176E2801684A00A8EC97 /* SceneDelegate.swift */; };
 		155217712801684A00A8EC97 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155217702801684A00A8EC97 /* ViewController.swift */; };
-		155217742801684A00A8EC97 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 155217722801684A00A8EC97 /* Main.storyboard */; };
 		155217762801684D00A8EC97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 155217752801684D00A8EC97 /* Assets.xcassets */; };
 		155217792801684D00A8EC97 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 155217772801684D00A8EC97 /* LaunchScreen.storyboard */; };
+		D691F057280C8D1E00843859 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D691F056280C8D1E00843859 /* CustomView.swift */; };
+		D69593E4280DE95000669793 /* Inject in Frameworks */ = {isa = PBXBuildFile; productRef = D69593E3280DE95000669793 /* Inject */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +21,10 @@
 		1552176C2801684A00A8EC97 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1552176E2801684A00A8EC97 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		155217702801684A00A8EC97 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		155217732801684A00A8EC97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		155217752801684D00A8EC97 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		155217782801684D00A8EC97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1552177A2801684D00A8EC97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D691F056280C8D1E00843859 /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D69593E4280DE95000669793 /* Inject in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,7 +61,7 @@
 				1552176C2801684A00A8EC97 /* AppDelegate.swift */,
 				1552176E2801684A00A8EC97 /* SceneDelegate.swift */,
 				155217702801684A00A8EC97 /* ViewController.swift */,
-				155217722801684A00A8EC97 /* Main.storyboard */,
+				D691F056280C8D1E00843859 /* CustomView.swift */,
 				155217752801684D00A8EC97 /* Assets.xcassets */,
 				155217772801684D00A8EC97 /* LaunchScreen.storyboard */,
 				1552177A2801684D00A8EC97 /* Info.plist */,
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = HotReloadInSwift;
+			packageProductDependencies = (
+				D69593E3280DE95000669793 /* Inject */,
+			);
 			productName = HotReloadInSwift;
 			productReference = 155217692801684A00A8EC97 /* HotReloadInSwift.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = 155217602801684A00A8EC97;
+			packageReferences = (
+				D69593E2280DE95000669793 /* XCRemoteSwiftPackageReference "Inject" */,
+			);
 			productRefGroup = 1552176A2801684A00A8EC97 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,7 +135,6 @@
 			files = (
 				155217792801684D00A8EC97 /* LaunchScreen.storyboard in Resources */,
 				155217762801684D00A8EC97 /* Assets.xcassets in Resources */,
-				155217742801684A00A8EC97 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,6 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				155217712801684A00A8EC97 /* ViewController.swift in Sources */,
+				D691F057280C8D1E00843859 /* CustomView.swift in Sources */,
 				1552176D2801684A00A8EC97 /* AppDelegate.swift in Sources */,
 				1552176F2801684A00A8EC97 /* SceneDelegate.swift in Sources */,
 			);
@@ -147,14 +155,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		155217722801684A00A8EC97 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				155217732801684A00A8EC97 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		155217772801684D00A8EC97 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -292,7 +292,6 @@
 				INFOPLIST_FILE = HotReloadInSwift/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -300,6 +299,10 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				"OTHER_LDFLAGS[arch=*]" = (
+					"-Xlinker",
+					"-interposable",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.va.HotReloadInSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -320,7 +323,6 @@
 				INFOPLIST_FILE = HotReloadInSwift/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -358,6 +360,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D69593E2280DE95000669793 /* XCRemoteSwiftPackageReference "Inject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/krzysztofzablocki/Inject.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D69593E3280DE95000669793 /* Inject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D69593E2280DE95000669793 /* XCRemoteSwiftPackageReference "Inject" */;
+			productName = Inject;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 155217612801684A00A8EC97 /* Project object */;
 }
